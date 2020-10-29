@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital-design side</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css')}}">
+    <script src="{{ url_for('static', filename='js.js')}}"></script>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='icontest.png')}}" />
+
+</head>
+<body>
+    <div class="middle">
+        <div class="header">
+            <h1>Octopus controller</h1>
+        </div>
+        <section class="content">
+            <div class="centered">
+                <button data-reset>Reset</button>
+                <button data-random>Random</button>
+                <div class="slider-container">
+                    <h3>Arm 1 & 2</h3>
+                    <input type="range" min="0" max="100" value="50" id=0 data-range name="slider1">
+                    <p id="val1" data-parag></p>
+                    <h3>Arm 3 & 4</h3>
+                    <input type="range" min="0" max="100" value="50" id=1 data-range name="slider2">
+                    <p id="val2" data-parag></p>
+                    <h3>Arm 5 & 6</h3>
+                    <input type="range" min="0" max="100" value="50" id=2 data-range name="slider3">
+                    <p id="val3" data-parag></p>
+                    <h3>Arm 7 & 8</h3>  
+                    <input type="range" min="0" max="100" value="50" id=3 data-range name="slider4">
+                    <p id="val4" data-parag></p>
+                </div>
+                <div class="bottomButs">
+                    <div>
+                        <button data-submit id="enabled">Submit</button>
+                        <button data-random_submit id="enabled">Submit Random</button>
+                        <!--<button id="End" onclick="location.href='/end'" type="button">End Program</button>-->
+                    </div>
+                    <p id="or">Or</p>
+                    <button class="longButton" id="automatic-off" data-automatic>Send Automatic Updates</button>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
